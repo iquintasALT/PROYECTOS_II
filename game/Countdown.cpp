@@ -28,9 +28,9 @@ void Countdown::render() {
 		aux = "Aaron calvo";
 	}
 
-	Texture counter = Texture(sdlutils().renderer(), aux, sdlutils().fonts().at("ARIAL24"),
+	counter = new Texture(sdlutils().renderer(), aux, sdlutils().fonts().at("ARIAL24"),
 		build_sdlcolor(0xffffffff));
-	counter.render(10, 10);
+	counter->render(10, 10);
 }
 
 void Countdown::update()
